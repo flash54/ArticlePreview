@@ -53,7 +53,7 @@ body {
   display: grid;
   -ms-grid-columns: 1.5fr 2.5fr;
       grid-template-columns: 1.5fr 2.5fr;
-  width: 55%;
+  width: 60%;
   height: 40%;
   background-color: white;
   border-radius: 1rem;
@@ -89,14 +89,14 @@ body {
 
 .card2 h2 {
   color: #48556a;
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   padding-right: 4rem;
 }
 
 .card2 p {
   color: #6d7f97;
-  font-size: 1.1rem;
-  padding-right: 4rem;
+  font-size: 1.2rem;
+  padding-right: 5rem;
 }
 
 .card2 .profile {
@@ -123,11 +123,12 @@ body {
 }
 
 .card2 .profile .name_date {
-  margin-right: 19rem;
+  margin-right: 20rem;
 }
 
 .card2 .profile .name_date h4 {
   color: #48556a;
+  font-size: 1.2rem;
 }
 
 .card2 .profile .name_date span {
