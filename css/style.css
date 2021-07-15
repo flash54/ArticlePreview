@@ -1,0 +1,152 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: 'Manrope', sans-serif;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ecf2f8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1.5fr 2.5fr;
+      grid-template-columns: 1.5fr 2.5fr;
+  width: 55%;
+  height: 40%;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+.card1 img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.card2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 3rem 0 0rem 4rem;
+}
+
+.card2 > * {
+  margin-bottom: 1rem;
+}
+
+.card2 h2 {
+  color: #48556a;
+  font-size: 1.7rem;
+  padding-right: 4rem;
+}
+
+.card2 p {
+  color: #6d7f97;
+  font-size: 1.1rem;
+  padding-right: 4rem;
+}
+
+.card2 .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 40%;
+  margin-top: 0rem;
+}
+
+.card2 .profile .avatar {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  margin-right: 1.5rem;
+}
+
+.card2 .profile .name_date {
+  margin-right: 19rem;
+}
+
+.card2 .profile .name_date h4 {
+  color: #48556a;
+}
+
+.card2 .profile .name_date span {
+  color: #9eafc2;
+}
+
+.card2 .profile #shareIcon {
+  background-color: #ecf2f8;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+/*# sourceMappingURL=style.css.map */
