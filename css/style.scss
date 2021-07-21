@@ -1,0 +1,202 @@
+//Colors
+$VeryDarkGrayishBlue: hsl(217, 19%, 35%);
+$DesaturatedDarkBlue: hsl(214, 17%, 51%);
+$GrayishBlue: hsl(212, 23%, 69%);
+$LightGrayishBlue: hsl(210, 46%, 95%);
+
+//CSS RESET
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html{
+    font-family: 'Manrope', sans-serif;
+    font-size: .8125rem;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+// ***
+body{
+    background: $LightGrayishBlue;
+
+    display: grid;
+    place-content: center;
+    place-items: center;
+
+    min-height: 100vh;
+}
+
+.card{
+    border-radius: 10px;
+    // border: 2px solid red;
+    width: 330px;
+    height: 485px;
+
+    background-color: white;
+}
+
+.card-img{
+    // background-color: white;
+    height: 180px;
+
+    border-radius: 10px 10px 0 0;
+
+    background-image: url("../images/drawers.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
+
+    padding: 35px 41px 10px 32px;
+
+    h4{
+        font-weight: 700;
+        color: $VeryDarkGrayishBlue;
+        margin-bottom: 17px;
+    }
+
+    p{
+        font-weight: 500;
+        color: $DesaturatedDarkBlue;
+        font-size: 13px;
+        margin-bottom: 30px;
+        line-height: 1.5;
+    }
+
+    .profile{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+        .photo{
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        .personal{
+            display: flex;
+            flex-direction: column;
+
+            
+            // align-items: center;
+            // border: 2px solid red;
+
+            h5{
+                font-weight: 700;
+                color: $VeryDarkGrayishBlue;
+                font-size: 12px;
+            }
+
+            span{
+                font-weight: 500;
+                color: $GrayishBlue;
+                font-size: 12px;
+            }
+        }
+
+        .shareBtn{
+            background-color: $LightGrayishBlue;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+
+            display: grid;
+            place-items: center;
+            margin-left: 65px;
+
+            cursor: pointer;
+        }
+    }
+}
+
+.active{
+    visibility: hidden;
+
+    position: absolute;
+    left: 23px;
+    bottom: 66px;
+
+    background-color: $VeryDarkGrayishBlue;
+    border-radius: 0 0 10px 10px;
+
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+
+    width: 330px;
+    height: 66px;
+
+    >p{
+        color: $GrayishBlue;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+
+        font-size: 12px;
+
+        margin: 0 5px 0 30px;
+
+
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+    }
+
+    .co-logo{
+        display: flex;
+        align-items: center;
+
+        margin: 0 45px 0 5px;
+
+        >a{
+            margin-inline: 8px;
+        }
+    }
+
+    .shareBtnActive{
+        background-color: $DesaturatedDarkBlue;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+
+        display: grid;
+        place-items: center;
+
+        cursor: pointer;
+        >img{
+            filter: brightness(0) invert(1);
+        }        
+    }
+}
+
+
