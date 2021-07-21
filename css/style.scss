@@ -51,46 +51,72 @@ body{
 }
 
 .card{
-    border-radius: 10px;
-    // border: 2px solid red;
-    width: 330px;
-    height: 485px;
+    border-radius: .625rem;
+
+    width: 20.625rem;
+    height: 30.3125rem;
 
     background-color: white;
+
+    @media(min-width: 500px){
+        width: 50rem;
+        height: 18.75rem;
+
+        display: flex;
+        flex-direction: row;
+    }
 }
 
 .card-img{
-    // background-color: white;
-    height: 180px;
+    height: 11.25rem;
 
-    border-radius: 10px 10px 0 0;
+    border-radius: .625rem .625rem 0 0;
 
     background-image: url("../images/drawers.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
+    @media(min-width: 500px){
+        width: 46.875rem;
+        height: auto;
+
+        border-radius: .625rem 0 0 .625rem;
+    }
 }
 
 .card-content{
     display: flex;
     flex-direction: column;
-    // align-items: center;
-    // justify-content: center;
 
-    padding: 35px 41px 10px 32px;
+    padding: 2.1875rem 2.5625rem 0.625rem 2rem;
 
     h4{
         font-weight: 700;
         color: $VeryDarkGrayishBlue;
-        margin-bottom: 17px;
+        margin-bottom: 1.0625rem;
     }
 
     p{
         font-weight: 500;
         color: $DesaturatedDarkBlue;
-        font-size: 13px;
-        margin-bottom: 30px;
+        font-size: 0.8125rem;
+        margin-bottom: 1.875rem;
         line-height: 1.5;
+    }
+
+    @media(min-width: 500px){
+        padding: 2.1875rem 2.625rem 0.625rem 2.5rem;
+
+        h4{
+            font-size: 1.4375rem;
+            margin-bottom: .8125rem;
+        }
+
+        p{
+            font-size: .9375rem;
+            margin-bottom: 1.625rem;
+        }
     }
 
     .profile{
@@ -99,43 +125,50 @@ body{
         align-items: center;
         
         .photo{
-            height: 40px;
+            height: 2.5rem;
             border-radius: 50%;
-            margin-right: 15px;
+            margin-right: 0.9375rem;
         }
 
         .personal{
             display: flex;
             flex-direction: column;
 
-            
-            // align-items: center;
-            // border: 2px solid red;
-
             h5{
                 font-weight: 700;
                 color: $VeryDarkGrayishBlue;
-                font-size: 12px;
+                font-size: 0.75rem;
             }
 
             span{
                 font-weight: 500;
                 color: $GrayishBlue;
-                font-size: 12px;
+                font-size: 0.75rem;
             }
         }
 
         .shareBtn{
             background-color: $LightGrayishBlue;
             border-radius: 50%;
-            width: 30px;
-            height: 30px;
+
+            width: 1.875rem;
+            height: 1.875rem;
 
             display: grid;
             place-items: center;
-            margin-left: 65px;
+
+            margin-left: 4.0625rem;
 
             cursor: pointer;
+        }
+
+        @media(min-width: 500px){
+            .photo{
+                margin-right: 1.5625rem;
+            }
+            .shareBtn{
+                margin-left: 12.5rem;
+            }
         }
     }
 }
@@ -143,51 +176,46 @@ body{
 .active{
     visibility: hidden;
 
-    position: absolute;
-    left: 23px;
-    bottom: 66px;
+    position: relative;
+    bottom: 4.125rem;
 
     background-color: $VeryDarkGrayishBlue;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 0.625rem 0.625rem;
 
     display: flex;
     align-items: center;
-    // justify-content: center;
 
-    width: 330px;
-    height: 66px;
+    width: 20.625rem;
+    height: 4.125rem;
 
     >p{
         color: $GrayishBlue;
         text-transform: uppercase;
-        letter-spacing: 5px;
+        letter-spacing: 0.3125rem;
 
-        font-size: 12px;
+        font-size: 0.75rem;
 
-        margin: 0 5px 0 30px;
+        margin: 0 0.3125rem 0 1.875rem;
 
-
-        // display: flex;
-        // align-items: center;
-        // justify-content: center;
     }
 
     .co-logo{
         display: flex;
         align-items: center;
 
-        margin: 0 45px 0 5px;
+        margin: 0 2.8125rem 0 0.3125rem;
 
         >a{
-            margin-inline: 8px;
+            margin-inline: 0.5rem;
         }
     }
 
     .shareBtnActive{
         background-color: $DesaturatedDarkBlue;
         border-radius: 50%;
-        width: 30px;
-        height: 30px;
+
+        width: 1.875rem;
+        height: 1.875rem;
 
         display: grid;
         place-items: center;
@@ -196,6 +224,59 @@ body{
         >img{
             filter: brightness(0) invert(1);
         }        
+    }
+
+    @media(min-width: 500px){
+        left: 308.5px;
+        bottom: 137px;
+
+        border-radius: 0.625rem 0.625rem 0.625rem 0.625rem;
+
+        width: 16.4375rem;
+        height: 3.125rem;
+
+        .co-logo{
+            margin: 0 0 0 1.125rem;
+
+            >a{
+                margin-inline: 0.625rem;
+            }
+        }
+
+        .shareBtnActive{
+            position: absolute;
+            top: 4.6875rem;
+            right: 7.0625rem;
+        }
+
+        .arrow-down {
+            position: absolute;
+            top: 2.5625rem;
+            right: 6.75rem;
+
+            width: 0; 
+            height: 0; 
+            
+            border-left: 1.25rem solid transparent;
+            border-right: 1.25rem solid transparent;
+            
+            border-top: 1.25rem solid $VeryDarkGrayishBlue;
+        }
+    }
+}
+
+.attribution{
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    font-size: 0.625rem;
+    a{
+        color: teal;
+    }
+
+    @media(min-width: 500px){
+        font-size: 0.9375rem;
     }
 }
 

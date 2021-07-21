@@ -43,19 +43,41 @@ body {
 }
 
 .card {
-  border-radius: 10px;
-  width: 330px;
-  height: 485px;
+  border-radius: .625rem;
+  width: 20.625rem;
+  height: 30.3125rem;
   background-color: white;
 }
 
+@media (min-width: 500px) {
+  .card {
+    width: 50rem;
+    height: 18.75rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 .card-img {
-  height: 180px;
-  border-radius: 10px 10px 0 0;
+  height: 11.25rem;
+  border-radius: .625rem .625rem 0 0;
   background-image: url("../images/drawers.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+@media (min-width: 500px) {
+  .card-img {
+    width: 46.875rem;
+    height: auto;
+    border-radius: .625rem 0 0 .625rem;
+  }
 }
 
 .card-content {
@@ -66,21 +88,35 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 35px 41px 10px 32px;
+  padding: 2.1875rem 2.5625rem 0.625rem 2rem;
 }
 
 .card-content h4 {
   font-weight: 700;
   color: #48556a;
-  margin-bottom: 17px;
+  margin-bottom: 1.0625rem;
 }
 
 .card-content p {
   font-weight: 500;
   color: #6d7f97;
-  font-size: 13px;
-  margin-bottom: 30px;
+  font-size: 0.8125rem;
+  margin-bottom: 1.875rem;
   line-height: 1.5;
+}
+
+@media (min-width: 500px) {
+  .card-content {
+    padding: 2.1875rem 2.625rem 0.625rem 2.5rem;
+  }
+  .card-content h4 {
+    font-size: 1.4375rem;
+    margin-bottom: .8125rem;
+  }
+  .card-content p {
+    font-size: .9375rem;
+    margin-bottom: 1.625rem;
+  }
 }
 
 .card-content .profile {
@@ -97,9 +133,9 @@ body {
 }
 
 .card-content .profile .photo {
-  height: 40px;
+  height: 2.5rem;
   border-radius: 50%;
-  margin-right: 15px;
+  margin-right: 0.9375rem;
 }
 
 .card-content .profile .personal {
@@ -115,50 +151,58 @@ body {
 .card-content .profile .personal h5 {
   font-weight: 700;
   color: #48556a;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 .card-content .profile .personal span {
   font-weight: 500;
   color: #9eafc2;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 .card-content .profile .shareBtn {
   background-color: #ecf2f8;
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
+  width: 1.875rem;
+  height: 1.875rem;
   display: -ms-grid;
   display: grid;
   place-items: center;
-  margin-left: 65px;
+  margin-left: 4.0625rem;
   cursor: pointer;
+}
+
+@media (min-width: 500px) {
+  .card-content .profile .photo {
+    margin-right: 1.5625rem;
+  }
+  .card-content .profile .shareBtn {
+    margin-left: 12.5rem;
+  }
 }
 
 .active {
   visibility: hidden;
-  position: absolute;
-  left: 23px;
-  bottom: 66px;
+  position: relative;
+  bottom: 4.125rem;
   background-color: #48556a;
-  border-radius: 0 0 10px 10px;
+  border-radius: 0 0 0.625rem 0.625rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 330px;
-  height: 66px;
+  width: 20.625rem;
+  height: 4.125rem;
 }
 
 .active > p {
   color: #9eafc2;
   text-transform: uppercase;
-  letter-spacing: 5px;
-  font-size: 12px;
-  margin: 0 5px 0 30px;
+  letter-spacing: 0.3125rem;
+  font-size: 0.75rem;
+  margin: 0 0.3125rem 0 1.875rem;
 }
 
 .active .co-logo {
@@ -168,18 +212,18 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 45px 0 5px;
+  margin: 0 2.8125rem 0 0.3125rem;
 }
 
 .active .co-logo > a {
-  margin-inline: 8px;
+  margin-inline: 0.5rem;
 }
 
 .active .shareBtnActive {
   background-color: #6d7f97;
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
+  width: 1.875rem;
+  height: 1.875rem;
   display: -ms-grid;
   display: grid;
   place-items: center;
@@ -189,5 +233,57 @@ body {
 .active .shareBtnActive > img {
   -webkit-filter: brightness(0) invert(1);
           filter: brightness(0) invert(1);
+}
+
+@media (min-width: 500px) {
+  .active {
+    left: 308.5px;
+    bottom: 137px;
+    border-radius: 0.625rem 0.625rem 0.625rem 0.625rem;
+    width: 16.4375rem;
+    height: 3.125rem;
+  }
+  .active .co-logo {
+    margin: 0 0 0 1.125rem;
+  }
+  .active .co-logo > a {
+    margin-inline: 0.625rem;
+  }
+  .active .shareBtnActive {
+    position: absolute;
+    top: 4.6875rem;
+    right: 7.0625rem;
+  }
+  .active .arrow-down {
+    position: absolute;
+    top: 2.5625rem;
+    right: 6.75rem;
+    width: 0;
+    height: 0;
+    border-left: 1.25rem solid transparent;
+    border-right: 1.25rem solid transparent;
+    border-top: 1.25rem solid #48556a;
+  }
+}
+
+.attribution {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  font-size: 0.625rem;
+}
+
+.attribution a {
+  color: teal;
+}
+
+@media (min-width: 500px) {
+  .attribution {
+    font-size: 0.9375rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
