@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [www.frontendmentor.io/solutions](https://www.frontendmentor.io/solutions/article-with-share-icon-yFlB4zwcK)
 - Live Site URL: [flash54.github.io/ArticlePreview](https://flash54.github.io/ArticlePreview/)
 
 ## My process
